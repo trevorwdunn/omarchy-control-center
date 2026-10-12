@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "trevor.hub",
   "name": "Control Center",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Trevor",
   "license": "GPL-3.0-or-later",
-  "description": "Control Center: one bar icon for network, Bluetooth and volume, with a small menu whose rows open the full panels to the side.",
+  "description": "Control Center: one bar icon that drops a card of tiles for Wi-Fi, Bluetooth, LocalSend, Do Not Disturb, Night Light, Stay Awake, brightness, volume and peripheral batteries. Rows open the full panels to the side.",
   "kinds": [
     "bar-widget"
   ],
@@ -14,7 +14,7 @@
   },
   "barWidget": {
     "displayName": "Control Center",
-    "description": "Network, Bluetooth and volume behind one icon.",
+    "description": "Connectivity, switches, sliders and peripheral batteries behind one icon.",
     "category": "System",
     "allowMultiple": false,
     "defaultSection": "right",
@@ -36,6 +36,13 @@
         "max": 400,
         "step": 4,
         "default": 56
+      },
+      {
+        "key": "showAirdrop",
+        "type": "boolean",
+        "label": "Show AirDrop (omdrop)",
+        "defaultValue": false,
+        "description": "Adds an AirDrop row to the connectivity tile when the omdrop plugin is installed."
       }
     ]
   }

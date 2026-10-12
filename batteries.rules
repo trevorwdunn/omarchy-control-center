@@ -1,0 +1,13 @@
+# Control Center (trevor.hub): lets the logged-in user read peripheral
+# batteries that only answer over hidraw. Install with:
+#   sudo install -m 644 batteries.rules /etc/udev/rules.d/70-control-center-batteries.rules
+#   sudo udevadm control --reload && sudo udevadm trigger --subsystem-match=hidraw
+#
+# uaccess grants read and write on these nodes to the active local session;
+# batteries.py itself only sends status queries.
+
+# Keychron keyboards, mice and receivers (also what launcher.keychron.com needs).
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", TAG+="uaccess"
+
+# Logitech Bolt receiver. Not needed where Solaar's udev rule is installed.
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c548", TAG+="uaccess"
