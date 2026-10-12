@@ -47,7 +47,7 @@ Rows for things you do not have stay empty or hidden: LocalSend needs the `bredd
 ## Known limits
 
 - **It leans on the bar's internals.** Omarchy's panels expect the real bar object, which a third-party widget is not given, so this borrows it from a neighbouring built-in widget. An Omarchy update can break it; if that happens the rows simply stop opening.
-- **The battery queries are specific to the devices I own** (a Keychron mouse and a Logitech Bolt receiver). Other models from those makers may not answer the same way.
+- **The battery queries were worked out on a small number of Keychron and Logitech Bolt devices.** Other models from those makers may not answer the same way.
 
 ## Licence
 
