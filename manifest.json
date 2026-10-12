@@ -4,7 +4,7 @@
   "name": "Control Center",
   "version": "0.1.0",
   "author": "Trevor",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "description": "Control Center: one bar icon for network, Bluetooth and volume, with a small menu whose rows open the full panels to the side.",
   "kinds": [
     "bar-widget"

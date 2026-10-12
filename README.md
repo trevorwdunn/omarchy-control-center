@@ -28,4 +28,4 @@ You will probably want to remove the separate network, Bluetooth and audio widge
 
 ## Licence
 
-MIT
+GPL-3.0-or-later. You may use, change and share this for any purpose; if you distribute a changed version, its source has to be available under the same licence. See `LICENSE`.
