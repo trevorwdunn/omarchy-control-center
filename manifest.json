@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "trevor.hub",
+  "name": "Control Center",
+  "version": "0.1.0",
+  "author": "Trevor",
+  "license": "MIT",
+  "description": "Control Center: one bar icon for network, Bluetooth and volume, with a small menu whose rows open the full panels to the side.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Control Center",
+    "description": "Network, Bluetooth and volume behind one icon.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "schema": [
+      {
+        "key": "retreatDelayMs",
+        "type": "int",
+        "label": "Close delay (ms)",
+        "min": 100,
+        "max": 3000,
+        "step": 50,
+        "default": 200
+      },
+      {
+        "key": "retreatDistance",
+        "type": "int",
+        "label": "Close distance (px)",
+        "min": 0,
+        "max": 400,
+        "step": 4,
+        "default": 56
+      }
+    ]
+  }
+}
